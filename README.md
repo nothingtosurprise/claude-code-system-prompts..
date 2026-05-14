@@ -34,7 +34,7 @@ Download it and try it out for free!  **https://piebald.ai/**
 > [!important]
 > **NEW (January 23, 2026): We've added all of Claude Code's ~40 system reminders to this list&mdash;see [System Reminders](#system-reminders).**
 
-This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.1.140](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.140) (May 12th, 2026).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 177 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
+This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.1.141](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.141) (May 13th, 2026).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 178 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
 
 **This repository is updated within minutes of each Claude Code release.  See the [changelog](./CHANGELOG.md), and follow [@PiebaldAI](https://x.com/PiebaldAI) on X for a summary of the system prompt changes in each release.**
 
@@ -262,7 +262,7 @@ Text for large system reminders.
 - [System Reminder: Memory file contents](./system-prompts/system-reminder-memory-file-contents.md) (**36** tks) - Contents of a memory file by path.
 - [System Reminder: Nested memory contents](./system-prompts/system-reminder-nested-memory-contents.md) (**33** tks) - Contents of a nested memory file.
 - [System Reminder: New diagnostics detected](./system-prompts/system-reminder-new-diagnostics-detected.md) (**52** tks) - Notification about new diagnostic issues.
-- [System Reminder: Output style active](./system-prompts/system-reminder-output-style-active.md) (**46** tks) - Notification that an output style is active.
+- [System Reminder: Output style active](./system-prompts/system-reminder-output-style-active.md) (**50** tks) - Notification that an output style is active.
 - [System Reminder: Plan file reference](./system-prompts/system-reminder-plan-file-reference.md) (**62** tks) - Reference to an existing plan file.
 - [System Reminder: Plan mode approval tool enforcement](./system-prompts/system-reminder-plan-mode-approval-tool-enforcement.md) (**236** tks) - Requires plan mode turns to end with either AskUserQuestion for clarification or ExitPlanMode for plan approval, and forbids asking for approval any other way.
 - [System Reminder: Plan mode is active (5-phase)](./system-prompts/system-reminder-plan-mode-is-active-5-phase.md) (**927** tks) - Enhanced plan mode system reminder with parallel exploration and multi-agent planning.
