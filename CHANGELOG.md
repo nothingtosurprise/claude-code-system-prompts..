@@ -4,6 +4,22 @@ Note: Only use **NEW:** for entirely new prompt files, NOT for new additions/sec
 
 ### Claude Code System Prompts Changelog
 
+# [2.1.146](https://github.com/Piebald-AI/claude-code-system-prompts/commit/6ad4688)
+
+_+4,755 tokens_
+
+- **NEW:** Tool Description: Workflow — Describes the Workflow tool for opt-in deterministic multi-subagent orchestration, including script metadata, agent hooks with plain-text or structured returns, pipeline vs. parallel control flow, token budgeting, quality patterns, concurrency limits, and resume behavior.
+- **NEW:** Agent Prompt: Workflow subagent plain text output — Instructs workflow-spawned subagents to return raw final text as the calling script's parsed value, avoiding human-facing confirmations, markdown wrappers, or SendUserMessage delivery.
+- **NEW:** Agent Prompt: Workflow subagent structured output — Instructs workflow-spawned subagents with schemas to return their answer by calling the StructuredOutput tool exactly once, retrying on schema validation failure and not duplicating the result in text.
+- **NEW:** System Prompt: Phase four of plan mode — Adds final-plan guidance requiring context, a single recommended approach, critical files and reusable utilities, concise executable detail, and end-to-end verification steps.
+- **REMOVED:** Skill: /dream nightly schedule — Removes the skill that deduplicated and created a durable recurring `/dream consolidate` cron job, confirmed expiry/cancellation details, and triggered immediate consolidation.
+- Agent Prompt: Managed Agents onboarding flow — Expands onboarding with concrete success-criteria questions, an optional outcome-graded kickoff using `user.define_outcome`, and a mandatory pre-flight viability check that reconciles each required action against available tools, credentials, data mounts, networking, and prompt specificity before emitting code.
+- Agent Prompt: Security monitor for autonomous agent actions (first part) — Clarifies that `[User answered AskUserQuestion]:` messages count as direct user intent even though ordinary tool results remain untrusted for authorizing risky action parameters.
+- Data: Managed Agents overview — Adds guidance to reconcile resources before the first run so missing tools, MCP servers, credentials, reachable hosts, mounted data, or checkable context are caught before the agent spends budget mid-session.
+- Skill: Building LLM-powered applications with Claude — Updates the Managed Agents onboarding slash-command guidance to include the new pre-flight viability check before code generation.
+- Skill: Simplify — Renames the skill heading from "Simplify: Code Review and Cleanup" to "Code Review and Cleanup."
+- System Prompt: Worker instructions — Changes the post-implementation review step to invoke the `code-review` skill instead of `simplify`.
+
 # [2.1.145](https://github.com/Piebald-AI/claude-code-system-prompts/commit/58f08ba)
 
 _+20,218 tokens_
