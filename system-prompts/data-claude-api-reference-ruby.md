@@ -1,7 +1,7 @@
 <!--
 name: 'Data: Claude API reference — Ruby'
 description: Ruby SDK reference including installation, client initialization, basic requests, streaming, and beta tool runner
-ccVersion: 2.1.128
+ccVersion: 2.1.174
 -->
 # Claude API — Ruby
 
@@ -125,7 +125,7 @@ When `stop_reason` is `:refusal`, the response includes structured `stop_details
 
 ```ruby
 if message.stop_reason == :refusal && message.stop_details
-  puts "Category: #{message.stop_details.category}"     # :cyber, :bio, or nil
+  puts "Category: #{message.stop_details.category}"     # e.g. :cyber, :bio, :reasoning_extraction, :frontier_llm, or nil — see docs for the full set
   puts "Explanation: #{message.stop_details.explanation}"
 end
 ```

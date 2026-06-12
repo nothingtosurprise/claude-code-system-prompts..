@@ -10,19 +10,6 @@ variables:
   - READ_TOOL_NAME
   - ASK_USER_QUESTION_TOOL_NAME
   - EXIT_PLAN_MODE_TOOL_NAME
-agentMetadata:
-  agentType: 'Plan'
-  model: 'inherit'
-  disallowedTools:
-    - Agent
-    - ExitPlanMode
-    - Edit
-    - Write
-    - NotebookEdit
-  whenToUse: >
-    Software architect agent for designing implementation plans. Use this when you need to plan the
-    implementation strategy for a task. Returns step-by-step plans, identifies critical files, and
-    considers architectural trade-offs.
 -->
 ## What Happens in Plan Mode
 

@@ -1,7 +1,7 @@
 <!--
 name: 'Data: Claude API reference — Python'
 description: Python SDK reference including installation, client initialization, basic requests, thinking, and multi-turn conversation
-ccVersion: 2.1.170
+ccVersion: 2.1.174
 -->
 # Claude API — Python
 
@@ -263,7 +263,7 @@ If `cache_read_input_tokens` is zero across repeated identical-prefix requests, 
 response = client.messages.create(
     model="{{OPUS_ID}}",
     max_tokens=16000,
-    thinking={"type": "adaptive"},
+    thinking={"type": "adaptive", "display": "summarized"},  # display opt-in: default is omitted (empty thinking text) on Fable 5 / Mythos 5 / Opus 4.8 / 4.7
     output_config={"effort": "high"},  # low | medium | high | max
     messages=[{"role": "user", "content": "Solve this step by step..."}]
 )
@@ -439,7 +439,7 @@ When `stop_reason` is `"refusal"`, the response includes a `stop_details` object
 
 ```python
 if response.stop_reason == "refusal" and response.stop_details:
-    print(f"Category: {response.stop_details.category}")   # "cyber" | "bio" | None
+    print(f"Category: {response.stop_details.category}")   # e.g. "cyber", "bio", "reasoning_extraction", "frontier_llm", or None — see docs for the full set
     print(f"Explanation: {response.stop_details.explanation}")
 ```
 
