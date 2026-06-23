@@ -34,7 +34,7 @@ Download it and try it out for free!  **https://piebald.ai/**
 > [!tip]
 > **NEW (June 12, 2026):** We've greatly expanded this list with many more of Claude Code's prompts&mdash;**from 350 to 515 (+165)**&mdash;our most complete coverage yet.
 
-This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.1.186](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.186) (June 22nd, 2026).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 216 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
+This repository contains an up-to-date list of all Claude Code's various system prompts and their associated token counts as of **[Claude Code v2.1.187](https://www.npmjs.com/package/@anthropic-ai/claude-code/v/2.1.187) (June 23rd, 2026).**  It also contains a [**CHANGELOG.md**](./CHANGELOG.md) for the system prompts across 217 versions since v2.0.14.  From the team behind [<img src="https://github.com/Piebald-AI/piebald/raw/main/assets/logo.svg" width="15"> **Piebald.**](https://piebald.ai/)
 
 **This repository is updated within minutes of each Claude Code release.  See the [changelog](./CHANGELOG.md), and follow [@PiebaldAI](https://x.com/PiebaldAI) on X for a summary of the system prompt changes in each release.**
 
@@ -75,7 +75,7 @@ Sub-agents and utilities.
 
 #### Sub-agents
 
-- [Agent Prompt: Explore](./system-prompts/agent-prompt-explore.md) (**575** tks) - System prompt for the Explore subagent.
+- [Agent Prompt: Explore](./system-prompts/agent-prompt-explore.md) (**871** tks) - System prompt for the Explore subagent.
 - [Agent Prompt: Plan mode (enhanced)](./system-prompts/agent-prompt-plan-mode-enhanced.md) (**715** tks) - Enhanced prompt for the Plan subagent.
 
 #### Creation Assistants
@@ -227,7 +227,7 @@ Parts of the main system prompt.
 - [System Prompt: Advisor tool instructions](./system-prompts/system-prompt-advisor-tool-instructions.md) (**443** tks) - Instructions for using the Advisor tool.
 - [System Prompt: Agent Summary Generation](./system-prompts/system-prompt-agent-summary-generation.md) (**178** tks) - System prompt used for "Agent Summary" generation.
 - [System Prompt: Agent memory instructions](./system-prompts/system-prompt-agent-memory-instructions.md) (**337** tks) - Instructions for including memory update guidance in agent system prompts.
-- [System Prompt: Agent thread notes](./system-prompts/system-prompt-agent-thread-notes.md) (**205** tks) - Behavioral guidelines for agent threads covering absolute paths, response formatting, emoji avoidance, and tool call punctuation.
+- [System Prompt: Agent thread notes](./system-prompts/system-prompt-agent-thread-notes.md) (**293** tks) - Behavioral guidelines for agent threads covering absolute paths, response formatting, emoji avoidance, and tool call punctuation.
 - [System Prompt: Auto mode](./system-prompts/system-prompt-auto-mode.md) (**244** tks) - Continuous task execution, akin to a background agent.
 - [System Prompt: Autonomous loop check](./system-prompts/system-prompt-autonomous-loop-check.md) (**1071** tks) - Defines behavior for autonomous timer-based invocations, guiding Claude to continue established work, maintain PRs, and handle repeated idle checks while the user is away.
 - [System Prompt: Autonomous loop notification guidance](./system-prompts/system-prompt-autonomous-loop-notification-guidance.md) (**98** tks) - Guides when autonomous loop ticks should notify the user via PushNotification for blockers or actionable state changes.
@@ -317,7 +317,7 @@ Parts of the main system prompt.
 - [System Prompt: Personal project memory description](./system-prompts/system-prompt-personal-project-memory-description.md) (**67** tks) - Describes project memories for ongoing work, goals, initiatives, bugs, or incidents relevant to the user's work in a directory.
 - [System Prompt: Phase four of plan mode](./system-prompts/system-prompt-phase-four-of-plan-mode.md) (**187** tks) - Phase four of plan mode.
 - [System Prompt: Plan sent to Ultraplan](./system-prompts/system-prompt-plan-sent-to-ultraplan.md) (**106** tks) - User-facing note confirming a plan has been sent to Ultraplan for remote refinement.
-- [System Prompt: Plan vs memory guidance](./system-prompts/system-prompt-plan-vs-memory-guidance.md) (**87** tks) - Explains when to use or update a plan instead of saving information to memory.
+- [System Prompt: Plan vs memory guidance](./system-prompts/system-prompt-plan-vs-memory-guidance.md) (**115** tks) - Explains when to use or update a plan instead of saving information to memory.
 - [System Prompt: PowerShell edition for 5.1](./system-prompts/system-prompt-powershell-edition-for-51.md) (**285** tks) - System prompt for providing information about Windows PowerShell 5.1.
 - [System Prompt: PowerShell edition for 7+](./system-prompts/system-prompt-powershell-edition-for-7.md) (**128** tks) - Describes PowerShell 7+ shell syntax support, including pipeline chain operators, ternary, null-coalescing, and UTF-8 defaults.
 - [System Prompt: PowerShell edition unknown](./system-prompts/system-prompt-powershell-edition-unknown.md) (**108** tks) - Assumes Windows PowerShell 5.1 compatibility when the PowerShell edition is unknown and forbids PowerShell 7-only syntax.
@@ -434,14 +434,13 @@ Text for large system reminders.
 - [System Reminder: USD budget](./system-prompts/system-reminder-usd-budget.md) (**42** tks) - Current USD budget statistics.
 - [System Reminder: Ultracode enabled](./system-prompts/system-reminder-ultracode-enabled.md) (**74** tks) - Instructs the agent to optimize for exhaustive correctness and use Workflow on substantive tasks when Ultracode is enabled.
 - [System Reminder: Ultraplan mode](./system-prompts/system-reminder-ultraplan-mode.md) (**437** tks) - System reminder for using Ultraplan mode to create a detailed implementation plan with multi-agent exploration and critique.
-- [System Reminder: Verify plan reminder](./system-prompts/system-reminder-verify-plan-reminder.md) (**47** tks) - Reminder to verify completed plan.
 - [System Reminder: Workflow isolated worktree](./system-prompts/system-reminder-workflow-isolated-worktree.md) (**111** tks) - Tells a workflow subagent it is running in an isolated git worktree separate from the main working directory.
 
 ### Builtin Tool Descriptions
 
 - [Tool Description: Agent explicit-spawn restriction](./system-prompts/tool-description-agent-explicit-spawn-restriction.md) (**0** tks) - Restricts agent spawning to explicit user requests or named agent types instead of inferred thoroughness.
 - [Tool Description: ArtifactTool](./system-prompts/tool-description-artifacttool.md) (**36** tks) - ArtifactTool: publishes an HTML or Markdown file as a claude.ai web page, private by default.
-- [Tool Description: Artifact](./system-prompts/tool-description-artifact.md) (**835** tks) - Describes the Artifact tool for deploying self-contained HTML or Markdown pages, including file-first usage, update behavior, CSP constraints, responsive design, and favicon requirements.
+- [Tool Description: Artifact](./system-prompts/tool-description-artifact.md) (**845** tks) - Describes the Artifact tool for deploying self-contained HTML or Markdown pages, including file-first usage, update behavior, CSP constraints, responsive design, and favicon requirements.
 - [Tool Description: AskUserQuestion decision guidance](./system-prompts/tool-description-askuserquestion-decision-guidance.md) (**60** tks) - Additional guidance for using AskUserQuestion only when the user's answer changes what the agent should do next.
 - [Tool Description: AskUserQuestion](./system-prompts/tool-description-askuserquestion.md) (**220** tks) - Tool description for asking user questions.
 - [Tool Description: Browser file upload](./system-prompts/tool-description-browser-file-upload.md) (**130** tks) - Describes the browser file upload tool, which uploads shared files directly to a page file input by element ref and enforces the 10 MB combined size limit.
@@ -595,7 +594,7 @@ Built-in skill prompts for specialized tasks.
 - [Skill: /stuck (background-daemon diagnostics)](./system-prompts/skill-stuck-background-daemon-diagnostics.md) (**181** tks) - The background-daemon troubleshooting section of the /stuck skill.
 - [Skill: /stuck slash command](./system-prompts/skill-stuck-slash-command.md) (**964** tks) - Diagnozse frozen or slow Claude Code sessions.
 - [Skill: Agent Design Patterns](./system-prompts/skill-agent-design-patterns.md) (**2884** tks) - Reference guide covering decision heuristics for building agents on the Claude API, including tool surface design, context management, caching strategies, and composing tool calls.
-- [Skill: Artifact design](./system-prompts/skill-artifact-design.md) (**2829** tks) - Design guidance skill for producing distinctive, production-grade frontend interfaces; loaded by the Artifact tool, combining a deliberate design process, taste guidance, render-verified mechanics, and copywriting.
+- [Skill: Artifact design](./system-prompts/skill-artifact-design.md) (**2570** tks) - Design guidance skill for producing distinctive, polished artifacts by calibrating visual treatment, applying design fundamentals, planning color/type/layout, and avoiding templated AI-generated defaults.
 - [Skill: Build with Claude API (reference guide)](./system-prompts/skill-build-with-claude-api-reference-guide.md) (**1054** tks) - Template for presenting language-specific reference documentation with quick task navigation.
 - [Skill: Building LLM-powered applications with Claude](./system-prompts/skill-building-llm-powered-applications-with-claude.md) (**27294** tks) - Guides Claude in building LLM-powered applications using the Anthropic SDK, covering language detection, API surface selection (Claude API vs Managed Agents), model defaults, thinking/effort configuration, and language-specific documentation reading.
 - [Skill: Claude Code configuration guide](./system-prompts/skill-claude-code-configuration-guide.md) (**975** tks) - Skill instructions for answering Claude Code configuration questions by checking the running build, bundled references, and current documentation.
@@ -615,7 +614,7 @@ Built-in skill prompts for specialized tasks.
 - [Skill: Create verifier skills](./system-prompts/skill-create-verifier-skills.md) (**2580** tks) - Prompt for creating verifier skills for the Verify agent to automatically verify code changes.
 - [Skill: Debugging](./system-prompts/skill-debugging.md) (**417** tks) - Instructions for debugging an issue that the user is encountering in the Claude Code session.
 - [Skill: Design sync Storybook source shape](./system-prompts/skill-design-sync-storybook-source-shape.md) (**18509** tks) - Design sync sub-skill instructions for using a repo's Storybook as the fidelity oracle when building, validating, matching, uploading, and re-syncing component previews.
-- [Skill: Design sync](./system-prompts/skill-design-sync.md) (**0** tks) - Skill for syncing a React design system to claude.ai/design by configuring the target project, running the converter, verifying previews, and uploading verified artifacts.
+- [Skill: Design sync](./system-prompts/skill-design-sync.md) (**9610** tks) - Skill for syncing a React design system to claude.ai/design by configuring the target project, running the converter, verifying previews, and uploading verified artifacts.
 - [Skill: Dynamic pacing loop execution](./system-prompts/skill-dynamic-pacing-loop-execution.md) (**598** tks) - Step-by-step instructions for executing a dynamic pacing loop that runs tasks, arms persistent monitors for event-gated waits, schedules fallback heartbeat ticks, and handles task notifications.
 - [Skill: Generate permission allowlist from transcripts](./system-prompts/skill-generate-permission-allowlist-from-transcripts.md) (**2408** tks) - Analyzes session transcripts to extract frequently used read-only tool-call patterns and adds them to the project's .claude/settings.json permission allowlist to reduce permission prompts.
 - [Skill: Model migration guide](./system-prompts/skill-model-migration-guide.md) (**44152** tks) - Step-by-step instructions for migrating existing code to newer Claude models, covering breaking changes, deprecated parameters, per-SDK syntax, prompt-behavior shifts, and migration checklists.

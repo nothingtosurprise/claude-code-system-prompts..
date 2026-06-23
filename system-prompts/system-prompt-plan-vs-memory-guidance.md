@@ -7,6 +7,7 @@ agentMetadata:
   model: 'inherit'
   disallowedTools:
     - Agent
+    - Artifact
     - ExitPlanMode
     - Edit
     - Write

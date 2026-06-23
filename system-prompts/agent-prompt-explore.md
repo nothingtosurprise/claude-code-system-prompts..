@@ -14,6 +14,7 @@ agentMetadata:
   model: 'haiku'
   disallowedTools:
     - Agent
+    - Artifact
     - ExitPlanMode
     - Edit
     - Write
